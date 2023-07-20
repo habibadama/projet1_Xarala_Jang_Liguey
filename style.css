@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@100;200;300;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo h4 {
+    font-size: 34px;
+    font-family: 'Dancing Script', cursive;
+    color: #000;
+}
+
+.fsh-title {
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.shop-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 3px solid red;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 40px;
+    background-color: #FFF;
+    z-index: 999;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    border-bottom: 3px solid red;
+}
+
+header nav ul li a.active {
+    border-bottom: 3px solid red;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: #878787;
+}
+
+
+/* SECTION FASHIONS */
+
+.fashions {
+    margin-top: 70px;
+    display: grid;
+    grid-template-areas: "women women men kid" "women women cosmetic accesorie";
+    grid-gap: 10px;
+    height: 70vh;
+}
+
+.wm-fashion {
+    grid-area: women;
+    background-color: rgb(11, 226, 226);
+    background-image: url(images/woman-fashion.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #FAE4D9;
+    padding: 100px 0 0 40px;
+}
+
+.mn-fashion {
+    grid-area: men;
+    background-color: #BEE2D6;
+    background-image: url(images/men-fashion.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.kd-fashion {
+    grid-area: kid;
+    background-color: #D7D4F1;
+    background-image: url(images/kid-fashion.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.csm-fashion {
+    grid-area: cosmetic;
+    background-color: #FDDCE3;
+    background-image: url(images/cosmetic.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.accsr-fashion {
+    grid-area: accesorie;
+    background-color: #CDE2F5;
+    background-image: url(images/accessoire.png);
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wm-fashion p {
+    max-width: 400px;
+    font-size: 14px;
+    margin: 16px 0 10px 0;
+    color: #8E8E8E;
+}
+
+.mn-fashion,
+.kd-fashion,
+.csm-fashion,
+.accsr-fashion {
+    padding: 60px 0 23px 25px;
+}
+
+.mn-fashion h4,
+.kd-fashion h4,
+.csm-fashion h4,
+.accsr-fashion h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+}
+
+.mn-fashion h5,
+.kd-fashion h5,
+.csm-fashion h5,
+.accsr-fashion h5 {
+    font-size: 10px;
+    color: #878787;
+}
+
+
+/* SECTION PRODUCTS */
+
+.principal-title {
+    font-size: 19px;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.principal-title::after {
+    content: '';
+    width: 40px;
+    height: 5px;
+    background-color: red;
+    bottom: 50px;
+    display: block;
+}
+
+#product {
+    max-width: 900px;
+    margin: auto;
+}
+
+.product-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 20px 0;
+}
+
+.product-navbar nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.product-navbar nav ul a {
+    text-decoration: none;
+    margin-right: 18px;
+    font-size: 14px;
+    color: #878787;
+}
+
+.product-navbar nav ul a.active {
+    border-bottom: 2px solid red;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-img {
+    width: 200px;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-info {
+    text-align: center;
+    margin-top: 17px;
+}
+
+.product-info p {
+    font-size: 12px;
+    color: #878787;
+}
+
+.product-info .stars i {
+    color: #F4D03F;
+    font-size: 13px
+}
+
+.product-info .price {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.product .product-img {
+    position: relative;
+}
+
+.product .product-img span {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 2px 6px;
+}
+
+.product .product-img .green-color {
+    background-color: green;
+}
+
+.product .product-img .black-color {
+    background-color: black;
+}
+
+.product .product-img .red-color {
+    background-color: red;
+}
+
+
+/* SECTION PROJET-JACKET */
+
+#projet_jacket {
+    margin: 40px 0 70px 0;
+    background-color: #FFF;
+}
+
+.slider {
+    width: 90%;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slides {
+    width: 500%;
+    height: 300px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.slide .content {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+}
+
+.slide .content h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #f05d6c;
+}
+
+.slide .content h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin: 5px 0 10px 0;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 90%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #f7f5f5;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background-color: #f7f5f5;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 260px;
+}
+
+.navigation-auto div {
+    border: 2px solid #f7f5f5;
+    padding: 5px;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: #f7f5f5;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: #f7f5f5;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: #f7f5f5;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background-color: #f7f5f5;
+}
+
+.project-container {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-content {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.project-content p {
+    font-size: 14px;
+    color: #878787;
+}
+
+.project-info .stars i {
+    color: #F4D03F;
+    font-size: 13px
+}
+
+.project-info .price {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.project-content .project-img {
+    width: 60px;
+    height: 70px;
+    background-color: #D7D4F1;
+}
+
+.project-content .project-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* SERVICES SECTION */
+
+.service-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    background-color: #ddd;
+    margin-bottom: 50px;
+}
+
+.service-container .left-sec,
+.service-container .right-sec {
+    width: 300px;
+    height: 200px;
+    flex: 1 1 400px;
+}
+
+.service-container .right-sec {
+    position: relative;
+}
+
+.cercle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    top: 35px;
+    left: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cercle h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 5px 0;
+    color: #f05d6c;
+}
+
+.cercle p span {
+    color: #f05d6c;
+    font-weight: bolder;
+}
+
+.time {
+    position: absolute;
+    bottom: 60px;
+    left: 70px;
+    display: inline-block;
+}
+
+.time span {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.time span:not(:last-child) {
+    margin-right: 17px;
+}
+
+.service-container .left-sec img,
+.service-container .right-sec {
+    width: 100%;
+    height: 300px;
+}
+
+.service-container .shop-btn {
+    position: absolute;
+    left: 175px;
+    top: 250px;
+}
+
+.services-content {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.services-content .service {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.service .icon i {
+    color: #f05d6c;
+    font-size: 24px;
+}
+
+.service .info h4 {
+    font-size: 12px;
+}
+
+.service .info p {
+    font-size: 10px;
+    color: #878787
+}
+
+.images {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.images .img {
+    width: 200px;
+    height: 300px;
+}
+
+.images .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 70px auto 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-01 p {
+    max-width: 300px;
+    font-size: 14px;
+    color: #878787;
+}
+
+.col-01 .icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.col-01 .icons a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 8px
+}
+
+.col-01 .icons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.col-01 ul,
+.col-02 ul,
+.col-03 ul {
+    list-style: none;
+}
+
+.col-01 ul li,
+.col-02 ul li,
+.col-03 ul li {
+    display: block;
+    margin: 6px 0;
+}
+
+.col-01 ul li a,
+.col-02 ul li a,
+.col-03 ul li a {
+    text-decoration: none;
+    color: #878787;
+    font-size: 12px;
+}
+
+.col-02 h3,
+.col-02 h3,
+.col-03 h3,
+.col-04 h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.col-04 .input-group {
+    border: 1px solid #000;
+    border-radius: 70px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0 2px 5px;
+    border-radius: 50px;
+    width: 300px;
+}
+
+.col-04 .input-group .btn {
+    background-color: #c81612;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: navajowhite;
+    text-transform: uppercase;
+}
+
+.col-04 .input-group input {
+    border-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.col-04 .socials-media {
+    margin-top: 30px;
+}
+
+.col-04 .socials-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 19px;
+    border-radius: 50%;
+    border: 1px solid #878787;
+    background-color: #878787;
+    color: #000;
+    margin-right: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer .copyright {
+    max-width: 900px;
+    border-top: 1px solid #878787;
+    margin: 100px auto 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer .copyright p {
+    color: #878787;
+    font-size: 15px;
+}
+
+footer .copyright i {
+    color: #c81612;
+}
+
+footer .copyright span {
+    font-weight: bolder;
+    color: #000;
+}
